@@ -1,0 +1,17 @@
+:root{
+ /* colors */
+ --c-theme-accent:#e02;
+ --c-theme-dark:#940;
+ --c-theme-light:#f60;
+
+ --c-gray-1:#111;
+ --c-gray-3:#333;
+ --c-gray-5:#555;
+ --c-gray-7:#777;
+ --c-gray-9:#999;
+ --c-gray-b:#bbb;
+ --c-gray-b:#ddd;
+ /* fonts */
+ --main-font:"Lato" , sans-serif;
+ --sec-font:" K2D" , sans-serif;
+}
