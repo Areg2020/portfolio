@@ -15,3 +15,12 @@
   --main-font: "Lato", sans-serif;
   --sec-font: " K2D", sans-serif;
 }
+.custom_gradient{
+  background: conic-gradient(
+    transparent  0deg,
+    transparent 72deg,
+    var(--c-theme-light) 72deg,
+    var(--c-theme-light) 360deg
+  )
+ 
+}
