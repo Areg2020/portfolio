@@ -16,19 +16,25 @@
     <header class="backdrop-blue-md">
       <div
         class="container max-w-7xl mx-auto flex justify-between items-center gap-10 py-4">
-        <div
+         <input type="checkbox"  id="burger_check">
+                    <label class="burger" for="burger_check">
+                     <div class="line top"></div>
+                    <div class="line middle"></div>
+                    <div class="line bottom"></div>
+                    </label>
+        <a
           class="bg-linear-to-r from-[var(--c-theme-light)] to-[var(--c-theme-accent)] bg-clip-text text-transparent font-[K2D] text-3xl font-bold uppercase tracking-wide">
           Logo
-        </div>
-        <nav>
-          <ul
-            class="flex justify-center items-center text-xl text-[var(--c-gray-9)] font-medium tracking-wide gap-15 whitespace-nowrap">
-            <li class="text-[var(--c-theme-light)]"><a href="">Home</a></li>
-            <li class=""><a href="">Service</a></li>
-            <li class=""><a href="">About me</a></li>
-            <li class=""><a href="">Portfolio</a></li>
-            <li class=""><a href="">Contact me</a></li>
-          </ul>
+        </a>
+        <nav class="header_nav">
+          <menu 
+            class=" header_navlist flex justify-center items-center text-xl text-[var(--c-gray-9)] font-medium tracking-wide gap-15 whitespace-nowrap">
+            <li class=" header_active text-[var(--c-theme-light)]"><a href="">Home</a></li>
+            <li class="header_link"><a href="">Service</a></li>
+            <li class="header_link"><a href="">About me</a></li>
+            <li class="header_link"><a href="">Portfolio</a></li>
+            <li class="header_link"><a href="">Contact me</a></li>
+          </menu>
         </nav>
         <button
           class="bg-[var(--c-theme-light)] text-white font-bold text-base tracking-wild whitespace-nowrap px-10 py-3 rounded-lg">
@@ -319,21 +325,66 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="py-20">
         <div class="container max-w-7xl mx-auto flex flex-col justify-center items-center gap-15">
           <h2 class="text-5xl text-white font-bold">Contact me</h2>
-          <p class="text-xl text[var-(--c-gray-9)] ">Cultivating Connections: Reach Out and Connect with M</p>
+          <p class="text-xl text[var-(--c-gray-7)] ">Cultivating Connections: Reach Out and Connect with M</p>
           <form class="grid gap-6 grid-cols-2 grid-rows-[1fr_1fr_3fr_1fr]">
-            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="name">
-            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="email">
-            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="project">
-            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="phone">
+            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="Name">
+            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="Email">
+            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="Project">
+            <input type="text" class="text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg" placeholder="Phone">
           <textarea name="" class=" col-span-2 text-base text-[var(--c-gray-9)] bg-white/4 py-4 px-6 rounded-lg resize-none " id=""></textarea>
           <button class="cursor-pointer bg-[var(--c-theme-light)] border-2 border-[var(--c-theme-light)] text-white font-bold text-base tracking-wild whitespace-nowrap px-10 py-3 rounded-lg hover:bg-[var(--c-theme-dark)] hover:border-[var(--c-theme-dark)] justify-self-center col-span-2">Send</button>
           </form> 
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-white/4 p-10">
+      <div class="container max-w-7xl mx-auto flex flex-col justify-center items-center gap-8">
+             <a
+          class="bg-linear-to-r from-[var(--c-theme-light)] to-[var(--c-theme-accent)] bg-clip-text text-transparent font-[K2D] text-3xl font-bold uppercase tracking-wide flex flex-col justify-center items-center">
+          Logo
+        </a>
+           <nav>
+          <menu
+            class="flex justify-center items-center text-xl text-[var(--c-gray-9)] font-medium tracking-wide gap-15 whitespace-nowrap">
+            <li class=""><a href="">Home</a></li>
+            <li class=""><a href="">Service</a></li>
+            <li class=""><a href="">About me</a></li>
+            <li class=""><a href="">Portfolio</a></li>
+            <li class=""><a href="">Contact me</a></li>
+           </menu>
+        </nav>
+          <div class="inline-flex gap-5">
+              <a
+                href=""
+                class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-gray-b)] items-center justify-center text-xl"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href=""
+                class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-gray-b)] items-center justify-center text-xl"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href=""
+                class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-gray-b)] items-center justify-center text-xl"
+                ><i class="fa-brands fa-dribbble"></i
+              ></a>
+              <a
+                href=""
+                class="bg-white/4 aspect-square block rounded-full w-10 text-[var(--c-gray-b)] items-center justify-center text-xl"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </div>
+            <div class="flex flex-row gap-8 *:flex *:gap-4 *:items-center">
+              <div class="text-[var(--c-gray-9)]"><i class="fa-regular fa-envelope"></i><span>areg.2020@gmail.com</span></div>
+              <div class="text-[var(--c-gray-9)]"><i class="fa-solid fa-phone"></i><span>+374-22-54-67</span></div>
+            </div>
+            <hr class="bg-[var(--c-gray-7)] ">
+            <p class="text-[var(--c-gray-7)] font-bold border-t border-t-[var(--c-gray-7)] pt-8">Designed by @Areg.Vardanyan frontent web-developer</p>
+      </div>
+    </footer>
   </body>
 </html>
