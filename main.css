@@ -4,13 +4,13 @@
   --c-theme-dark: #940;
   --c-theme-light: #f60;
 
-  --c-gray-1: #111;
-  --c-gray-3: #333;
-  --c-gray-5: #555;
-  --c-gray-7: #777;
-  --c-gray-9: #999;
-  --c-gray-b: #bbb;
-  --c-gray-d: #ddd;
+  --c-grey-1: #111;
+  --c-grey-3: #333;
+  --c-grey-5: #555;
+  --c-grey-7: #777;
+  --c-grey-9: #999;
+  --c-grey-b: #bbb;
+  --c-grey-d: #ddd;
   /* fonts */
   --main-font: "Lato", sans-serif;
   --sec-font: " K2D", sans-serif;
@@ -40,7 +40,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  background: var(--color-gray-b);
+  background: var(--color-grey-b);
   transition: 0.6s;
 }
 #burger_check:checked ~ .burger > .top {
